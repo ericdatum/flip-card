@@ -1023,7 +1023,7 @@ pub mod FluidSimulation {
                         // this.u[right] += sx1 * p;
                         self.u[right] += sx1 * p;
                         // this.v[center] -= sy0 * p;
-                        self.u[center] += sy0 * p;
+                        self.v[center] -= sy0 * p;
                         // this.v[top] += sy1 * p;
                         self.v[top] += sy1 * p;
                     }

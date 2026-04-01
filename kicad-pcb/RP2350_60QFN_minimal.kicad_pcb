@@ -165500,7 +165500,7 @@
 		(layer "Edge.Cuts")
 		(uuid "f39a3170-0cc5-400b-afc4-46e8db471861")
 	)
-	(gr_text "Embedded Design"
+	(gr_text "DRILLSENSE"
 		(at 14.01 3.53 90)
 		(layer "B.SilkS")
 		(uuid "17c179c3-b8bc-49f7-8f47-ac70d8c16858")
@@ -165513,7 +165513,7 @@
 			)
 			(justify left top mirror)
 		)
-		(render_cache "Embedded Design" 90
+		(render_cache "DRILLSENSE" 90
 			(polygon
 				(pts
 					(xy 16.540425 4.972009) (xy 16.540425 7.171294) (xy 15.753475 7.171294) (xy 15.753475 4.972009)
@@ -165775,7 +165775,7 @@
 			)
 		)
 	)
-	(gr_text "Nicholas-L-Johnson@pm.me\nGitHub.com/Nicholas-L-Johnson/flip-card"
+	(gr_text "eric@drillsense.com\ndrillsense.com"
 		(at 42.47 3.84 90)
 		(layer "B.SilkS")
 		(uuid "194e9aff-ecda-4809-a7cc-fcafed3a1d7a")
@@ -165788,7 +165788,7 @@
 			)
 			(justify left top mirror)
 		)
-		(render_cache "Nicholas-L-Johnson@pm.me\nGitHub.com/Nicholas-L-Johnson/flip-card"
+		(render_cache "eric@drillsense.com\ndrillsense.com"
 			90
 			(polygon
 				(pts
@@ -166719,7 +166719,7 @@
 			)
 		)
 	)
-	(gr_text "Nick Johnson"
+	(gr_text "Eric Datum"
 		(at 4.23 3.34 90)
 		(layer "B.SilkS")
 		(uuid "ebc3e4f2-4a83-4877-a8ba-54dc8036ab75")
@@ -166732,7 +166732,7 @@
 			)
 			(justify left top mirror)
 		)
-		(render_cache "Nick Johnson" 90
+		(render_cache "Eric Datum" 90
 			(polygon
 				(pts
 					(xy 11.33942 8.347711) (xy 11.33942 9.818053) (xy 4.008227 9.818053) (xy 4.008227 8.347711) (xy 8.998841 8.347711)

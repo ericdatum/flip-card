@@ -805,6 +805,24 @@ async fn monitor_accelerometer(
 
 #[embassy_executor::task]
 async fn simulation_update() {
+    // === DrillSense ≠ mark startup animation ===
+    // Display the ≠ symbol on the 21x21 LED grid for 3 seconds before starting the fluid sim
+    let mut neq_grid = [[false; 21]; 21];
+    // Top horizontal bar (rows 6-7, cols 4-16)
+    for c in 4..17 { neq_grid[6][c] = true; neq_grid[7][c] = true; }
+    // Bottom horizontal bar (rows 13-14, cols 4-16)
+    for c in 4..17 { neq_grid[13][c] = true; neq_grid[14][c] = true; }
+    // Diagonal slash from bottom-left to top-right
+    for i in 0..17 {
+        let r = 17 - i;
+        let c = 3 + (i * 14) / 16;
+        if r < 21 && c < 21 { neq_grid[r][c] = true; }
+        if r > 0 && c < 21 { neq_grid[r - 1][c] = true; }
+    }
+    FRAME_DATA_SIGNAL.signal(neq_grid);
+    Timer::after_millis(3000).await;
+    // === End startup animation ===
+
     let mut scene = Scene::setupScene(400);
     ACCEL_DATA_SIGNAL.wait().await;
     let mut frame_count = 0;
